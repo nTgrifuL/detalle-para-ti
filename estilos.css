@@ -630,15 +630,15 @@ body {
 .flores {
     position: fixed;
 
-    top: 30%;
+    top: 32%;
     left: 50%;
 
     transform:
         translateX(-50%);
 
-    width: min(650px, 95vw);
+    width: min(520px, 85vw);
 
-    height: 330px;
+    height: 280px;
 
     z-index: 25;
 }
