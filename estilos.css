@@ -376,9 +376,12 @@ body {
 ========================= */
 
 .faroles {
-    position: fixed;
+    position: absolute;
+
     inset: 0;
+
     z-index: 10;
+
     pointer-events: none;
 }
 
@@ -388,7 +391,7 @@ body {
     bottom: 28%;
 
     width: 5px;
-    height: 120px;
+    height: 145px;
 
     background: #181817;
 }
@@ -510,18 +513,34 @@ body {
 
 .bienvenida {
     position: fixed;
+
     z-index: 9999;
+
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
+    transform:
+        translate(-50%, -50%);
+
     width: min(480px, 90vw);
+
     padding: 35px;
+
     text-align: center;
+
     background: rgba(7, 18, 35, .95);
-    border: 1px solid rgba(255,255,255,.15);
+
+    border:
+        1px solid
+        rgba(255,255,255,.15);
+
     border-radius: 20px;
+
     backdrop-filter: blur(8px);
-    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+
+    box-shadow:
+        0 20px 60px
+        rgba(0,0,0,.45);
 }
 
 .bienvenida h1 {
@@ -648,8 +667,8 @@ body {
 
     bottom: 0;
 
-    width: 140px;
-    height: 290px;
+    width: 110px;
+    height: 230px;
 
     background: transparent;
 
@@ -704,8 +723,8 @@ body {
     top: 0;
     left: 50%;
 
-    width: 100px;
-    height: 100px;
+    width: 78px;
+    height: 78px;
 
     transform:
         translateX(-50%);
@@ -721,18 +740,18 @@ body {
         #ffd83d;
 
     box-shadow:
-        0 0 0 4px #f2bd22,
-        0 0 0 10px #ffd83d;
+        0 0 0 3px #f2bd22,
+        0 0 0 7px #ffd83d;
 }
 
 .centro {
     position: absolute;
 
-    top: 30px;
+    top: 23px;
     left: 50%;
 
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
 
     transform:
         translateX(-50%);
@@ -753,11 +772,11 @@ body {
 .tallo {
     position: absolute;
 
-    top: 93px;
+    top: 73px;
     left: 50%;
 
-    width: 10px;
-    height: 195px;
+    width: 8px;
+    height: 155px;
 
     transform:
         translateX(-50%);
@@ -776,8 +795,8 @@ body {
 .hoja {
     position: absolute;
 
-    width: 65px;
-    height: 28px;
+    width: 52px;
+    height: 23px;
 
     background: #39783a;
 
@@ -788,15 +807,15 @@ body {
 }
 
 .hoja1 {
-    top: 145px;
-    left: 2px;
+    top: 115px;
+    left: 3px;
 
     transform:
         rotate(25deg);
 }
 
 .hoja2 {
-    top: 180px;
+    top: 145px;
     right: 0;
 
     transform:
@@ -832,7 +851,8 @@ body {
     border-radius: 18px;
 
     border:
-        1px solid rgba(255,220,100,.25);
+        1px solid
+        rgba(255,220,100,.25);
 
     opacity: 0;
 
@@ -1056,8 +1076,8 @@ body {
     }
 
     .flor {
-        width: 115px;
-        height: 250px;
+        width: 100px;
+        height: 220px;
 
         transform:
             scale(.75);
