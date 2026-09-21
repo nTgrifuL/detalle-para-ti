@@ -193,7 +193,7 @@ function continuarDescubrimiento() {
 function mostrarFinal() {
 
     tituloFlores.textContent =
-        "Un pequeño detalle para ti 💛";
+        "Un mensaje para ti Princesa";
 
 
     instruccion.textContent =
