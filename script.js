@@ -1,9 +1,9 @@
 const mensajes = {
-    1: "Dicen que las flores amarillas representan alegría, cariño y buenos deseos... 🌻",
+    1: "Desde el dia que te conoci, me senti el hombre mas feliz en el mundo.",
 
-    2: "Así que pensé que sería bonito darte unas, aunque esta vez tengan una pequeña sorpresa. 💛",
+    2: "Fuiste mi luz, mi salvacion ese dia, y no se como agradecerte por todo lo que hiciste por mi.",
 
-    3: "Porque eres alguien especial para mí, y espero que sigamos compartiendo momentos bonitos. ✨"
+    3: "Eres alguien muy especial, nunca lo olvides, eres hermosa, bella, eres mi princesita, y, aunque para mi es una palabra muy especial que no se lo digo a nadie asi por asi, puedo decir que..."
 };
 
 
