@@ -376,11 +376,9 @@ body {
 ========================= */
 
 .faroles {
-    position: absolute;
+    position: fixed;
     inset: 0;
-
-    z-index: 7;
-
+    z-index: 10;
     pointer-events: none;
 }
 
@@ -881,7 +879,7 @@ body {
 .carta-final {
     position: fixed;
 
-    z-index: 50;
+    z-index: 100;
 
     left: 50%;
     top: 50%;
