@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un pequeño detalle 🌻</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- CIELO -->
+    <div class="cielo">
+        <div class="luna"></div>
+
+        <div class="estrellas">
+            <span>✦</span><span>·</span><span>✧</span><span>·</span>
+            <span>✦</span><span>·</span><span>✧</span><span>·</span>
+            <span>✦</span><span>·</span><span>✧</span><span>·</span>
+            <span>✦</span><span>·</span><span>✧</span><span>·</span>
+            <span>✦</span><span>·</span><span>✧</span><span>·</span>
+        </div>
+    </div>
+
+
+    <!-- MONTAÑAS -->
+    <div class="montanas">
+        <div class="montana montana1"></div>
+        <div class="montana montana2"></div>
+        <div class="montana montana3"></div>
+    </div>
+
+
+    <!-- ÁRBOLES -->
+    <div class="bosque">
+        <div class="arbol arbol1"></div>
+        <div class="arbol arbol2"></div>
+        <div class="arbol arbol3"></div>
+        <div class="arbol arbol4"></div>
+        <div class="arbol arbol5"></div>
+    </div>
+
+
+    <!-- FAROLES -->
+    <div class="faroles">
+
+        <div class="farol farol1">
+            <div class="luz"></div>
+        </div>
+
+        <div class="farol farol2">
+            <div class="luz"></div>
+        </div>
+
+        <div class="farol farol3">
+            <div class="luz"></div>
+        </div>
+
+        <div class="farol farol4">
+            <div class="luz"></div>
+        </div>
+
+    </div>
+
+
+    <!-- LUCIÉRNAGAS -->
+    <div class="luciernagas">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+
+    <!-- PARQUE -->
+    <main class="parque">
+
+        <!-- CÉSPED -->
+        <div class="pasto">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+        </div>
+
+
+        <!-- FLORES PEQUEÑAS DEL FONDO -->
+        <div class="flores-fondo">
+
+            <div class="grupo-flores grupo1">
+                <span>🌼</span>
+                <span>🌸</span>
+                <span>🌼</span>
+                <span>🌷</span>
+            </div>
+
+            <div class="grupo-flores grupo2">
+                <span>🌸</span>
+                <span>🌼</span>
+                <span>🌷</span>
+                <span>🌼</span>
+            </div>
+
+            <div class="grupo-flores grupo3">
+                <span>🌷</span>
+                <span>🌼</span>
+                <span>🌸</span>
+                <span>🌼</span>
+            </div>
+
+        </div>
+
+
+        <!-- BIENVENIDA -->
+        <section id="bienvenida" class="bienvenida">
+
+            <h1>Un pequeño detalle 🌙</h1>
+
+            <h2>Para alguien especial</h2>
+
+            <p>
+                A veces unas flores dicen cosas
+                que no sabemos cómo explicar.
+            </p>
+
+            <button onclick="comenzar()">
+                Entrar al jardín 🌻
+            </button>
+
+        </section>
+
+
+        <!-- ZONA DE FLORES -->
+        <section id="zonaFlores" class="zona-flores">
+
+            <div class="texto-superior">
+
+                <h1 id="tituloFlores">
+                    Hay algo para ti
+                </h1>
+
+                <p id="instruccion">
+                    Encuentra el primer girasol 🌻
+                </p>
+
+            </div>
+
+
+            <!-- GIRASOLES PRINCIPALES -->
+            <div class="flores">
+
+                <!-- FLOR 1 -->
+                <button
+                    id="flor1"
+                    class="flor flor1 desbloqueada"
+                    onclick="descubrirFlor(1)"
+                >
+                    <span class="petalos"></span>
+                    <span class="centro"></span>
+                    <span class="tallo"></span>
+                    <span class="hoja hoja1"></span>
+                    <span class="hoja hoja2"></span>
+                </button>
+
+
+                <!-- FLOR 2 -->
+                <button
+                    id="flor2"
+                    class="flor flor2 bloqueada"
+                    onclick="descubrirFlor(2)"
+                    disabled
+                >
+                    <span class="petalos"></span>
+                    <span class="centro"></span>
+                    <span class="tallo"></span>
+                    <span class="hoja hoja1"></span>
+                    <span class="hoja hoja2"></span>
+                </button>
+
+
+                <!-- FLOR 3 -->
+                <button
+                    id="flor3"
+                    class="flor flor3 bloqueada"
+                    onclick="descubrirFlor(3)"
+                    disabled
+                >
+                    <span class="petalos"></span>
+                    <span class="centro"></span>
+                    <span class="tallo"></span>
+                    <span class="hoja hoja1"></span>
+                    <span class="hoja hoja2"></span>
+                </button>
+
+            </div>
+
+
+            <!-- MENSAJE -->
+            <div id="mensajeFlor" class="mensaje-flor">
+
+                <p id="textoFlor"></p>
+
+                <button
+                    id="botonSiguiente"
+                    onclick="continuarDescubrimiento()"
+                >
+                    Continuar ✨
+                </button>
+
+            </div>
+
+
+            <!-- CARTA FINAL -->
+            <div id="cartaFinal" class="carta-final">
+
+                <div class="decoracion">
+                    🌻 💛 🌻
+                </div>
+
+                <h2>Un pequeño detalle para ti</h2>
+
+                <h3>Flores amarillas 🌻</h3>
+
+                <p>
+                    Porque a veces no hace falta una gran razón
+                    para regalar flores.
+                </p>
+
+                <p>
+                    Solo quería darte un pequeño detalle
+                    y recordarte que eres alguien muy especial
+                    para mí.
+                </p>
+
+                <p>
+                    Espero que sigamos compartiendo momentos
+                    bonitos, risas y recuerdos.
+                </p>
+
+                <div class="firma">
+                    Con cariño, Haziel 💛
+                </div>
+
+                <button onclick="volverInicio()">
+                    Volver a empezar 🌙
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

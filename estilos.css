@@ -1,0 +1,1135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #07142d;
+    color: white;
+}
+
+
+/* =========================
+   CIELO
+========================= */
+
+.cielo {
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #07142d 0%,
+            #10284d 48%,
+            #183b54 100%
+        );
+
+    z-index: 0;
+}
+
+.luna {
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    top: 8%;
+    right: 12%;
+
+    border-radius: 50%;
+
+    background: #fff6c9;
+
+    box-shadow:
+        0 0 25px rgba(255, 246, 201, .6),
+        0 0 60px rgba(255, 246, 201, .25);
+}
+
+
+/* =========================
+   ESTRELLAS
+========================= */
+
+.estrellas {
+    position: absolute;
+    inset: 0;
+}
+
+.estrellas span {
+    position: absolute;
+    color: #fff9d5;
+    font-size: 16px;
+    animation: parpadear 3s infinite alternate;
+}
+
+.estrellas span:nth-child(1) { left: 8%; top: 12%; }
+.estrellas span:nth-child(2) { left: 17%; top: 20%; }
+.estrellas span:nth-child(3) { left: 25%; top: 8%; }
+.estrellas span:nth-child(4) { left: 34%; top: 25%; }
+.estrellas span:nth-child(5) { left: 44%; top: 13%; }
+.estrellas span:nth-child(6) { left: 52%; top: 30%; }
+.estrellas span:nth-child(7) { left: 62%; top: 11%; }
+.estrellas span:nth-child(8) { left: 72%; top: 25%; }
+.estrellas span:nth-child(9) { left: 82%; top: 13%; }
+.estrellas span:nth-child(10) { left: 91%; top: 29%; }
+.estrellas span:nth-child(11) { left: 14%; top: 35%; }
+.estrellas span:nth-child(12) { left: 29%; top: 33%; }
+.estrellas span:nth-child(13) { left: 39%; top: 19%; }
+.estrellas span:nth-child(14) { left: 48%; top: 7%; }
+.estrellas span:nth-child(15) { left: 58%; top: 22%; }
+.estrellas span:nth-child(16) { left: 69%; top: 35%; }
+.estrellas span:nth-child(17) { left: 77%; top: 8%; }
+.estrellas span:nth-child(18) { left: 87%; top: 22%; }
+.estrellas span:nth-child(19) { left: 4%; top: 30%; }
+.estrellas span:nth-child(20) { left: 95%; top: 10%; }
+
+@keyframes parpadear {
+    from {
+        opacity: .35;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* =========================
+   MONTAÑAS
+========================= */
+
+.montanas {
+    position: fixed;
+
+    left: 0;
+    bottom: 31%;
+
+    width: 100%;
+    height: 25%;
+
+    z-index: 1;
+}
+
+.montana {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 65%;
+    height: 100%;
+
+    background: linear-gradient(
+        to bottom,
+        #182c3c,
+        #102334
+    );
+
+    clip-path: polygon(
+        0 100%,
+        15% 62%,
+        27% 78%,
+        42% 30%,
+        53% 60%,
+        67% 42%,
+        82% 70%,
+        100% 50%,
+        100% 100%
+    );
+}
+
+.montana1 {
+    left: -10%;
+}
+
+.montana2 {
+    left: 30%;
+    height: 85%;
+    opacity: .85;
+}
+
+.montana3 {
+    right: -20%;
+    height: 75%;
+    opacity: .7;
+}
+
+
+/* =========================
+   ÁRBOLES
+========================= */
+
+.bosque {
+    position: fixed;
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.arbol {
+    position: absolute;
+
+    bottom: 29%;
+
+    width: 70px;
+    height: 170px;
+
+    background: #071a18;
+
+    clip-path: polygon(
+        45% 100%,
+        45% 62%,
+        15% 62%,
+        35% 45%,
+        10% 45%,
+        38% 25%,
+        20% 25%,
+        50% 0,
+        80% 25%,
+        62% 25%,
+        90% 45%,
+        65% 45%,
+        85% 62%,
+        55% 62%,
+        55% 100%
+    );
+}
+
+.arbol1 {
+    left: 2%;
+    transform: scale(1.4);
+}
+
+.arbol2 {
+    left: 13%;
+    transform: scale(.9);
+}
+
+.arbol3 {
+    right: 5%;
+    transform: scale(1.35);
+}
+
+.arbol4 {
+    right: 17%;
+    transform: scale(.8);
+}
+
+.arbol5 {
+    left: 45%;
+    transform: scale(.7);
+    opacity: .65;
+}
+
+
+/* =========================
+   PARQUE
+========================= */
+
+.parque {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 48%,
+            #285c32 62%,
+            #1d4929 82%,
+            #12351f 100%
+        );
+
+    z-index: 5;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   CÉSPED
+========================= */
+
+.pasto {
+    position: absolute;
+    inset: 45% 0 0 0;
+
+    pointer-events: none;
+}
+
+.pasto span {
+    position: absolute;
+
+    bottom: -5px;
+
+    width: 3px;
+    height: 45px;
+
+    background: linear-gradient(
+        to top,
+        #12341d,
+        #3f783b
+    );
+
+    transform-origin: bottom;
+
+    border-radius: 100%;
+
+    opacity: .8;
+}
+
+.pasto span:nth-child(1) { left: 2%; height: 45px; transform: rotate(-8deg); }
+.pasto span:nth-child(2) { left: 6%; height: 60px; transform: rotate(9deg); }
+.pasto span:nth-child(3) { left: 10%; height: 35px; transform: rotate(-12deg); }
+.pasto span:nth-child(4) { left: 14%; height: 55px; transform: rotate(7deg); }
+.pasto span:nth-child(5) { left: 18%; height: 42px; transform: rotate(-6deg); }
+.pasto span:nth-child(6) { left: 22%; height: 65px; transform: rotate(10deg); }
+.pasto span:nth-child(7) { left: 27%; height: 38px; transform: rotate(-8deg); }
+.pasto span:nth-child(8) { left: 31%; height: 52px; transform: rotate(8deg); }
+.pasto span:nth-child(9) { left: 36%; height: 43px; transform: rotate(-9deg); }
+.pasto span:nth-child(10) { left: 41%; height: 62px; transform: rotate(6deg); }
+.pasto span:nth-child(11) { left: 46%; height: 39px; transform: rotate(-7deg); }
+.pasto span:nth-child(12) { left: 51%; height: 58px; transform: rotate(8deg); }
+.pasto span:nth-child(13) { left: 56%; height: 46px; transform: rotate(-10deg); }
+.pasto span:nth-child(14) { left: 61%; height: 64px; transform: rotate(7deg); }
+.pasto span:nth-child(15) { left: 66%; height: 41px; transform: rotate(-7deg); }
+.pasto span:nth-child(16) { left: 71%; height: 55px; transform: rotate(9deg); }
+.pasto span:nth-child(17) { left: 76%; height: 45px; transform: rotate(-8deg); }
+.pasto span:nth-child(18) { left: 81%; height: 63px; transform: rotate(8deg); }
+.pasto span:nth-child(19) { left: 86%; height: 37px; transform: rotate(-9deg); }
+.pasto span:nth-child(20) { left: 91%; height: 57px; transform: rotate(7deg); }
+.pasto span:nth-child(21) { left: 95%; height: 44px; transform: rotate(-8deg); }
+.pasto span:nth-child(22) { left: 98%; height: 61px; transform: rotate(9deg); }
+.pasto span:nth-child(23) { left: 12%; height: 70px; transform: rotate(4deg); opacity: .5; }
+.pasto span:nth-child(24) { left: 37%; height: 68px; transform: rotate(-4deg); opacity: .5; }
+.pasto span:nth-child(25) { left: 57%; height: 72px; transform: rotate(5deg); opacity: .5; }
+.pasto span:nth-child(26) { left: 74%; height: 67px; transform: rotate(-5deg); opacity: .5; }
+.pasto span:nth-child(27) { left: 89%; height: 71px; transform: rotate(4deg); opacity: .5; }
+.pasto span:nth-child(28) { left: 4%; height: 68px; transform: rotate(-5deg); opacity: .5; }
+.pasto span:nth-child(29) { left: 49%; height: 65px; transform: rotate(4deg); opacity: .5; }
+.pasto span:nth-child(30) { left: 94%; height: 70px; transform: rotate(-4deg); opacity: .5; }
+
+
+/* =========================
+   FLORES DEL FONDO
+========================= */
+
+.flores-fondo {
+    position: absolute;
+
+    inset: 45% 0 0 0;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+.grupo-flores {
+    position: absolute;
+
+    display: flex;
+    gap: 3px;
+
+    font-size: 24px;
+
+    filter:
+        drop-shadow(
+            0 2px 3px rgba(0,0,0,.5)
+        );
+}
+
+.grupo1 {
+    left: 5%;
+    bottom: 18%;
+}
+
+.grupo2 {
+    right: 7%;
+    bottom: 24%;
+}
+
+.grupo3 {
+    left: 72%;
+    bottom: 8%;
+
+    transform: scale(.8);
+}
+
+
+/* =========================
+   FAROLES
+========================= */
+
+.faroles {
+    position: absolute;
+    inset: 0;
+
+    z-index: 7;
+
+    pointer-events: none;
+}
+
+.farol {
+    position: absolute;
+
+    bottom: 28%;
+
+    width: 5px;
+    height: 120px;
+
+    background: #181817;
+}
+
+.farol::before {
+    content: "";
+
+    position: absolute;
+
+    top: -8px;
+    left: -8px;
+
+    width: 21px;
+    height: 10px;
+
+    background: #181817;
+
+    border-radius: 5px;
+}
+
+.luz {
+    position: absolute;
+
+    top: -3px;
+    left: -5px;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+    background: #ffe79a;
+
+    box-shadow:
+        0 0 15px #ffd96a,
+        0 0 35px rgba(255,210,90,.6);
+}
+
+.farol1 {
+    left: 15%;
+    transform: scale(.65);
+}
+
+.farol2 {
+    left: 30%;
+    transform: scale(.8);
+}
+
+.farol3 {
+    right: 30%;
+    transform: scale(.8);
+}
+
+.farol4 {
+    right: 15%;
+    transform: scale(.65);
+}
+
+
+/* =========================
+   LUCIÉRNAGAS
+========================= */
+
+.luciernagas {
+    position: absolute;
+    inset: 0;
+
+    z-index: 20;
+
+    pointer-events: none;
+}
+
+.luciernagas i {
+    position: absolute;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: #f9df67;
+
+    box-shadow:
+        0 0 12px #ffe66d;
+
+    animation:
+        flotar 4s infinite alternate;
+}
+
+.luciernagas i:nth-child(1) { left: 12%; top: 55%; }
+.luciernagas i:nth-child(2) { left: 25%; top: 62%; }
+.luciernagas i:nth-child(3) { left: 39%; top: 57%; }
+.luciernagas i:nth-child(4) { left: 52%; top: 67%; }
+.luciernagas i:nth-child(5) { left: 66%; top: 56%; }
+.luciernagas i:nth-child(6) { left: 78%; top: 63%; }
+.luciernagas i:nth-child(7) { left: 88%; top: 52%; }
+.luciernagas i:nth-child(8) { left: 20%; top: 72%; }
+.luciernagas i:nth-child(9) { left: 34%; top: 75%; }
+.luciernagas i:nth-child(10) { left: 61%; top: 73%; }
+.luciernagas i:nth-child(11) { left: 73%; top: 70%; }
+.luciernagas i:nth-child(12) { left: 93%; top: 74%; }
+
+@keyframes flotar {
+    from {
+        transform: translateY(0);
+        opacity: .3;
+    }
+
+    to {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.bienvenida {
+    position: fixed;
+
+    z-index: 30;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    width: min(480px, 90vw);
+
+    padding: 35px;
+
+    text-align: center;
+
+    background:
+        rgba(7, 18, 35, .84);
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+}
+
+.bienvenida h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.bienvenida h2 {
+    color: #ffe27a;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.bienvenida p {
+    line-height: 1.6;
+
+    color: #e8edf5;
+
+    margin-bottom: 25px;
+}
+
+.bienvenida button,
+.carta-final button,
+#botonSiguiente {
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    background: #f4ca4d;
+
+    color: #251d09;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+.bienvenida button:hover,
+.carta-final button:hover,
+#botonSiguiente:hover {
+    transform:
+        translateY(-2px)
+        scale(1.03);
+
+    background: #ffe37a;
+
+    box-shadow:
+        0 5px 20px
+        rgba(255,220,100,.3);
+}
+
+
+/* =========================
+   ZONA FLORES
+========================= */
+
+#zonaFlores {
+    display: none;
+}
+
+#zonaFlores.visible {
+    display: block;
+}
+
+.texto-superior {
+    position: fixed;
+
+    top: 8%;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width: 90%;
+
+    text-align: center;
+
+    z-index: 30;
+}
+
+.texto-superior h1 {
+    font-size: 30px;
+
+    color: #ffe17b;
+}
+
+.texto-superior p {
+    margin-top: 8px;
+
+    color: #edf3ec;
+}
+
+
+/* =========================
+   GIRASOLES
+========================= */
+
+.flores {
+    position: fixed;
+
+    top: 30%;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width: min(650px, 95vw);
+
+    height: 330px;
+
+    z-index: 25;
+}
+
+.flor {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 140px;
+    height: 290px;
+
+    background: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: .35s;
+}
+
+.flor1 {
+    left: 14%;
+}
+
+.flor2 {
+    left: 41%;
+}
+
+.flor3 {
+    right: 14%;
+}
+
+.flor.bloqueada {
+    opacity: .28;
+
+    filter: grayscale(.6);
+
+    cursor: not-allowed;
+}
+
+.flor.desbloqueada {
+    animation:
+        llamarFlor 2s infinite;
+}
+
+@keyframes llamarFlor {
+
+    0%, 100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-8px);
+    }
+}
+
+.petalos {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 100px;
+    height: 100px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #8a5511 0 23%,
+            transparent 24%
+        ),
+        #ffd83d;
+
+    box-shadow:
+        0 0 0 4px #f2bd22,
+        0 0 0 10px #ffd83d;
+}
+
+.centro {
+    position: absolute;
+
+    top: 30px;
+    left: 50%;
+
+    width: 48px;
+    height: 48px;
+
+    transform:
+        translateX(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #9b6720,
+            #55300d 65%,
+            #321c09
+        );
+
+    z-index: 2;
+}
+
+.tallo {
+    position: absolute;
+
+    top: 93px;
+    left: 50%;
+
+    width: 10px;
+    height: 195px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        linear-gradient(
+            to right,
+            #214f28,
+            #4e873d,
+            #214f28
+        );
+
+    border-radius: 10px;
+}
+
+.hoja {
+    position: absolute;
+
+    width: 65px;
+    height: 28px;
+
+    background: #39783a;
+
+    border-radius:
+        100% 0 100% 0;
+
+    z-index: 3;
+}
+
+.hoja1 {
+    top: 145px;
+    left: 2px;
+
+    transform:
+        rotate(25deg);
+}
+
+.hoja2 {
+    top: 180px;
+    right: 0;
+
+    transform:
+        rotate(-25deg)
+        scaleX(-1);
+}
+
+
+/* =========================
+   MENSAJE
+========================= */
+
+.mensaje-flor {
+    position: fixed;
+
+    z-index: 40;
+
+    left: 50%;
+    bottom: 7%;
+
+    transform:
+        translate(-50%, 20px);
+
+    width: min(430px, 90vw);
+
+    padding: 20px;
+
+    text-align: center;
+
+    background:
+        rgba(8,18,34,.96);
+
+    border-radius: 18px;
+
+    border:
+        1px solid rgba(255,220,100,.25);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: .35s;
+}
+
+.mensaje-flor.visible {
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform:
+        translate(-50%, 0);
+}
+
+.mensaje-flor p {
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CARTA FINAL
+========================= */
+
+.carta-final {
+    position: fixed;
+
+    z-index: 50;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%)
+        scale(.9);
+
+    width: min(500px, 90vw);
+
+    max-height: 82vh;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf2,
+            #fff5c9
+        );
+
+    color: #403317;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 25px 80px
+        rgba(0,0,0,.65);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: .5s;
+}
+
+.carta-final.visible {
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1);
+}
+
+.carta-final .decoracion {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.carta-final h2 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.carta-final h3 {
+    color: #c68c12;
+
+    margin-bottom: 18px;
+}
+
+.carta-final p {
+    line-height: 1.6;
+
+    margin-bottom: 13px;
+}
+
+.firma {
+    margin: 20px 0;
+
+    font-style: italic;
+
+    color: #7d5b19;
+}
+
+
+/* =========================
+   CORAZONES
+========================= */
+
+.corazon-final {
+    position: fixed;
+
+    z-index: 100;
+
+    pointer-events: none;
+
+    animation:
+        subirCorazon
+        4s ease-out
+        forwards;
+}
+
+@keyframes subirCorazon {
+
+    from {
+        transform:
+            translateY(0)
+            scale(.7);
+
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    to {
+        transform:
+            translateY(-300px)
+            scale(1.2);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .luna {
+        width: 65px;
+        height: 65px;
+
+        top: 7%;
+        right: 9%;
+    }
+
+    .montanas {
+        bottom: 34%;
+        height: 20%;
+    }
+
+    .arbol {
+        transform: scale(.75);
+    }
+
+    .arbol1 {
+        left: -8%;
+    }
+
+    .arbol3 {
+        right: -8%;
+    }
+
+    .bienvenida {
+        width: 88vw;
+
+        padding:
+            28px 20px;
+    }
+
+    .bienvenida h1 {
+        font-size: 28px;
+    }
+
+    .bienvenida h2 {
+        font-size: 18px;
+    }
+
+    .texto-superior {
+        top: 5%;
+    }
+
+    .texto-superior h1 {
+        font-size: 24px;
+    }
+
+    .texto-superior p {
+        font-size: 14px;
+    }
+
+    .flores {
+        top: 29%;
+
+        width: 100vw;
+
+        height: 310px;
+    }
+
+    .flor {
+        width: 115px;
+        height: 250px;
+
+        transform:
+            scale(.75);
+    }
+
+    .flor1 {
+        left: -2%;
+    }
+
+    .flor2 {
+        left: 34%;
+    }
+
+    .flor3 {
+        right: -2%;
+    }
+
+    .flor.desbloqueada {
+        animation:
+            llamarFlorMobile 2s infinite;
+    }
+
+    @keyframes llamarFlorMobile {
+
+        0%, 100% {
+            transform:
+                scale(.75)
+                translateY(0);
+        }
+
+        50% {
+            transform:
+                scale(.75)
+                translateY(-7px);
+        }
+    }
+
+    .mensaje-flor {
+        bottom: 5%;
+    }
+
+    .carta-final {
+        width: 88vw;
+
+        max-height: 78vh;
+
+        padding:
+            25px 20px;
+    }
+
+    .carta-final h2 {
+        font-size: 24px;
+    }
+
+    .grupo-flores {
+        font-size: 18px;
+    }
+}
